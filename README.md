@@ -1,7 +1,10 @@
 men-blog
 ========
 
-MEN stacked blog demo app
+MEN stacked blog demo app.
+
+This is just a demo app for learning purposes on how you can create a serverside javascript web application using MongoDB, Express, NodeJS and Handlebars.
+
 
 # Prerequisites
 
@@ -23,4 +26,3 @@ Then open your browser and go to
 
     http://localhost:3000
 
-    
