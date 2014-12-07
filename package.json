@@ -1,13 +1,23 @@
 {
   "name": "blog",
   "version": "1.0.0",
-  "description": "Blog app",
+  "description": "Demo Blog app",
   "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sedus/men-blog.git"
+  },
+  "private": true,
   "scripts": {
     "start": "nodemon app.js"
   },
   "keywords": [
-    "blog"
+    "blog",
+    "node",
+    "mongo",
+    "mongoose",
+    "express",
+    "handlebars"
   ],
   "author": "Pim",
   "license": "ISC",
