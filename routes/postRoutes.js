@@ -22,15 +22,21 @@ exports.initialize = function (app) {
     router.get('/', postCtrl.findAll);
 
     router.get('/:id', function (req, res) {
-        res.send(req.post);
+        res.render('detail', {
+            post: req.post
+        })
     });
 
     router.post('/', postCtrl.createPost, function (req, res) {
-        res.send(req.post);
+        res.redirect('/');
+    });
+
+    router.post('/:id', postCtrl.updatePost, function (req, res) {
+        res.redirect('/');
     });
 
     router.delete('/:id', postCtrl.deletePost, function (req, res) {
-        res.send('Deleted');
+        res.redirect('/');
     });
 
     app.use('/api/post', router);
